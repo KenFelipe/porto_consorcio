@@ -8,7 +8,6 @@ const ButtonStyle = css`
     text-align: center;
     cursor: pointer;
 
-    font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 21px;

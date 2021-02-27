@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Banner from '../../component/banner/banner'
+import Banner from './banner'
 
 const Imoveis = props => (
     <div>
         <Title>Imoveis</Title>
-        <Banner></Banner>
+        <Banner />
     </div>
 )
 
