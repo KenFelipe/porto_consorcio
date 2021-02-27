@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import Banner from './banner'
 import Catching from '../../component/catching/catching'
+import Titling from './titling'
+import Carousel from '../../component/carousel/carousel'
 
 const Imoveis = props => (
     <div>
@@ -10,6 +12,12 @@ const Imoveis = props => (
 
         <Banner />
         <Catching />
+        <Titling />
+        <Carousel>
+            <div>childern1</div>
+            <div>childern2</div>
+            <div>childern3</div>
+        </Carousel>
     </div>
 )
 
