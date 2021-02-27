@@ -1,7 +1,3 @@
-* {
-    overflow: hidden;
-}
-
 html {
     font-size: 62.5%;
 }
@@ -10,4 +6,18 @@ body {
     background-color: pink;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+    padding-bottom: 1000px;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 28px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }

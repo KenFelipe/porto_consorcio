@@ -2,11 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Banner from './banner'
+import Catching from '../../component/catching/catching'
 
 const Imoveis = props => (
     <div>
         <Title>Imoveis</Title>
+
         <Banner />
+        <Catching />
     </div>
 )
 
