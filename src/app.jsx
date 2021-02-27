@@ -4,7 +4,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import './app.scss'
 
 // component
-import Navbar from './component/Navbar'
+import Navbar from './component/navbar/Navbar'
 
 // pages
 import Home from './pages/home/home'

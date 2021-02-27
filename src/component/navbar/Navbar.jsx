@@ -20,7 +20,7 @@ const Wrapper = styled.nav`
     ul {
         margin: 0;
         padding: 10px 20px;
-        background-color: skyblue;
+        background-color: gray;
     }
 
     a {

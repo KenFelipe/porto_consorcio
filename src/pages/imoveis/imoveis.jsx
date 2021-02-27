@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Banner from '../../component/banner/banner'
+
 const Imoveis = props => (
     <div>
         <Title>Imoveis</Title>
+        <Banner></Banner>
     </div>
 )
 

@@ -1,11 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Button from '../../component/button/button'
+
 const Home = props => (
-    <div>
+    <StyledHome>
         <Title>Home</Title>
-    </div>
+        <Button>Button</Button>
+    </StyledHome>
 )
+
+const StyledHome = styled.div`
+    padding: 0 20px;
+`
 
 const Title = styled.h2`
     font-size: 3.2rem;
