@@ -12,7 +12,7 @@ const Carousel = props => {
     const swiperConfig = {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
@@ -33,12 +33,11 @@ const Carousel = props => {
         breakpoints: props.breakpoints || {
             490: { slidesPerView: 2, spaceBetween: 20, },
             720: { slidesPerView: 3, spaceBetween: 20, },
-            721: { slidesPerView: 4, spaceBetween: 20, }
-        }
+        },
         // And if we need scrollbar
         // scrollbar: {
         //   el: '.swiper-scrollbar',
-        // },
+        // }
     }
 
     return (
