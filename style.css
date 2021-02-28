@@ -21,3 +21,11 @@ ul {
 li {
   list-style: none;
 }
+.swiper-container {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+  background-color: #fff;
+}
