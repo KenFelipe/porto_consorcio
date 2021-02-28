@@ -4,7 +4,9 @@ import styled from 'styled-components'
 import Banner from './banner'
 import Catching from '../../component/catching/catching'
 import Titling from './titling'
-import Carousel from '../../component/carousel/carousel'
+// import Carousel from '../../component/carousel/carousel'
+import BreadCrumbs from '../../component/breadcrumbs/breadcrumbs'
+import WhatsApp from '../../component/whatsapp/whatsapp'
 
 // debug
 import Card from '../../component/card/card'
@@ -12,14 +14,13 @@ import CardHeader from '../../component/card/header'
 import CardText from '../../component/card/text'
 
 const Imoveis = props => (
-    <div>
+    <ImoveisWrapper>
         <Title>Imoveis</Title>
 
         <Banner />
         <Catching />
         <Titling />
-        <Carousel height="315px" delay="5000">
-        </Carousel>
+        {/* <Carousel height="315px" delay="5000"></Carousel> */}
 
         <Debug>
             <Card image="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/thumbnail/consorcio-reforma-casa-de-praia.jpg">
@@ -27,7 +28,10 @@ const Imoveis = props => (
                 <CardText>PARCELAS DE<p>R$349,00</p>NO PLANO DE 208 MESES</CardText>
             </Card>
         </Debug>
-    </div>
+
+        <BreadCrumbs />
+        <WhatsApp />
+    </ImoveisWrapper>
 )
 
 const Debug = styled.div`
@@ -36,6 +40,10 @@ const Debug = styled.div`
     margin-top: 80px;
     padding-bottom: 80px;
     /* align-items: center; */
+`
+
+const ImoveisWrapper = styled.div`
+    padding-bottom: 80px;
 `
 
 const Title = styled.h2`
