@@ -19,9 +19,6 @@ const Imoveis = props => (
         <Catching />
         <Titling />
         <Carousel height="315px" delay="5000">
-            <div>childern1</div>
-            <div>childern2</div>
-            <div>childern3</div>
         </Carousel>
 
         <Debug>

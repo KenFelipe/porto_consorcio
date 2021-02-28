@@ -4,15 +4,23 @@ import styled from 'styled-components'
 import ContainerStyle from '../container/containerStyle'
 import './carousel.scss'
 
+import Card from '../../component/card/card';import CardHeader from '../../component/card/header';import CardText from '../../component/card/text';
+
 const Carousel = props => {
     useEffect(() => {
+        const sliders = document.getElementsByClassName('swiper-wrapper').item(0)
+        console.log(sliders)
+        for(let i = 0; i < sliders.childElementCount; i++) {
+            sliders.childNodes.item(i).className += ' swiper-slide'
+        }
         const swiper = new Swiper('.swiper-container', swiperConfig); 
     }, [])
 
     const swiperConfig = {
         // Optional parameters
         direction: 'horizontal',
-        loop: false,
+        // loop: false,
+        loop: true,
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
@@ -47,10 +55,14 @@ const Carousel = props => {
                 {/* Additional required wrapper */}
                 <div className="swiper-wrapper">
                     {/* Slides */}
-                    <div className="swiper-slide">Slide 1</div>
+                    {/* <div className="swiper-slide">Slide 1</div>
                     <div className="swiper-slide">Slide 2</div>
-                    <div className="swiper-slide">Slide 3</div>
-                    <div className="swiper-slide">Slide 4</div>
+                    <div className="swiper-slide">Slide 3</div> */}
+            <Card className="swiper-slide" image="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/thumbnail/consorcio-reforma-casa-de-praia.jpg"><CardHeader>Consórcio para Reforma da casa na praia no valor de R$55 mil: </CardHeader><CardText>PARCELAS DE<p>R$111,00</p>NO PLANO DE 208 MESES</CardText></Card>
+            <Card className="swiper-slide" image="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/thumbnail/consorcio-reforma-casa-de-praia.jpg"><CardHeader>Consórcio para Reforma da casa na praia no valor de R$55 mil: </CardHeader><CardText>PARCELAS DE<p>R$222,00</p>NO PLANO DE 208 MESES</CardText></Card>
+            <Card className="swiper-slide" image="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/thumbnail/consorcio-reforma-casa-de-praia.jpg"><CardHeader>Consórcio para Reforma da casa na praia no valor de R$55 mil: </CardHeader><CardText>PARCELAS DE<p>R$222,00</p>NO PLANO DE 208 MESES</CardText></Card>
+            <Card className="swiper-slide" image="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/thumbnail/consorcio-reforma-casa-de-praia.jpg"><CardHeader>Consórcio para Reforma da casa na praia no valor de R$55 mil: </CardHeader><CardText>PARCELAS DE<p>R$222,00</p>NO PLANO DE 208 MESES</CardText></Card>
+                    {/* {props.children} */}
                 </div>
                 {/* If we need pagination */}
                 <div className="swiper-pagination"></div>
