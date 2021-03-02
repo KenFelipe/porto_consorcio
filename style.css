@@ -22,6 +22,13 @@ ul {
 li {
   list-style: none;
 }
+
+button {
+  cursor: pointer;
+}
+button:hover, button:focus {
+  outline: none;
+}
 .swiper-container {
   height: 100%;
 }
