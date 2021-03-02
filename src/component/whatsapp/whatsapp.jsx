@@ -46,7 +46,6 @@ const WhatsAppContent = styled.div`
 
     width: 182px;
     height: 67px;
-    background-color: #aaa;
     border-radius: 500px;
     padding: 16px 0 19px 30px;
     color: #fff;

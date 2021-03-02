@@ -13,7 +13,6 @@ import Veiculos from './pages/veiculos/veiculos'
 
 const App = props => (
     <Wrapper>
-        <Title>Porto Consorcio</Title>
         <HashRouter hashType="noslash">
             <Navbar />
 
@@ -30,12 +29,6 @@ const App = props => (
 const Wrapper = styled.div`
     font-size: 2.2rem;
     background-color: skyblue;
-`
-
-const Title = styled.h1`
-    padding: 12px;
-    font-size: 3.6rem;
-    background-color: royalblue;
 `
 
 export default App

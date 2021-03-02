@@ -22,3 +22,12 @@ ul {
 li {
     list-style: none;
 }
+
+button {
+    cursor: pointer;
+    // background: #fff;
+
+    &:hover, &:focus  {
+        outline: none;
+    }
+}

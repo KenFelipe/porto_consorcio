@@ -6,7 +6,6 @@ const ButtonStyle = css`
     padding: 8.5px;
     color: #fff;
     text-align: center;
-    cursor: pointer;
 
     font-size: 1.1rem;
     font-weight: 600;
@@ -20,8 +19,7 @@ const ButtonStyle = css`
 
     transition: all .3s ease-out 0s;
 
-    &:hover, &:focus  {
-        outline: none;
+    &:hover {
         background-position: 0;
     }
 `
@@ -34,4 +32,12 @@ export const Green = css`
 export const Blue = css`
     ${ButtonStyle};
     background-image: linear-gradient(270deg, #3DACFF 0, #2FC5FF 50%, #148DBB 60%, #148DBB 100%);
+    background-image: linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(190,199,190,.2) 60%,rgba(190,190,190,.2) 100%);
 `
+
+export const White = css`
+    ${ButtonStyle};
+    color: #30c5ff;
+    border: 1px solid #30c5ff;
+    background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(190, 199, 190, .2) 60%, rgba(190, 190, 190, .2) 100%);
+` 

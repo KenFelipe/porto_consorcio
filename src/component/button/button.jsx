@@ -6,13 +6,14 @@ const Button = props => (
     <StyledButton 
         color={props.color}
         className={props.className} 
+        onClick={props.onClick}
     >{props.children}</StyledButton>
 )
 
 const StyledButton = styled.button`
     ${props => ButtonStyle[
         ButtonStyle.hasOwnProperty(props.color) ? 
-        props.color : 'Green'
+            props.color : 'Green'
     ]};
 `
 
