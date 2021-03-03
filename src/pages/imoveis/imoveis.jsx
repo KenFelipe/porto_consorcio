@@ -33,13 +33,16 @@ const Imoveis = props => (
             </Card>
         </Debug>
 
-        <Debug><PopupButton modal="lorem" color="White">Lorem Ipsum</PopupButton></Debug>
+        {/* popupmodal */}
+        <Debug><PopupButton modal="lorem" color="white">Lorem Ipsum</PopupButton></Debug>
         <Modal id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et beatae voluptates culpa aliquid perspiciatis vero dignissimos adipisci quis labore officiis magni, animi voluptatibus quisquam molestiae mollitia cupiditate. Nisi, harum. Voluptatem?</Modal>
         <Overlay />
-        <Debug> <PopupButton modal="test2" color="White">TEST</PopupButton> </Debug>
-        <Modal id="test2">TEST</Modal>
 
-        <BreadCrumbs />
+        <BreadCrumbs links={[
+            { to: '/', label: 'Home' },
+            { to: 'imoveis', label: 'Imoveis' },
+            { to: 'veiculos', label: 'Veiculos' },
+        ]}/>
         <WhatsApp />
     </ImoveisWrapper>
 )

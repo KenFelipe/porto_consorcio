@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
-import ContainerStyle from '../container/containerStyle'
+import Container from '../container/container'
 import './carousel.scss'
 
 import Card from '../../component/card/card';import CardHeader from '../../component/card/header';import CardText from '../../component/card/text';
@@ -79,7 +79,7 @@ const Carousel = props => {
 }
 
 const CarouselWrapper = styled.div`
-    ${ContainerStyle};
+    ${Container};
     height: ${props => props.height};
     margin-top: 40px;
 `

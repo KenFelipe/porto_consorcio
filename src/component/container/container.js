@@ -1,8 +1,8 @@
 import { css } from 'styled-components'
 
-const ContainerStyle = css`
+const Container = css`
     margin: 0 auto;
     max-width: 1200px;
 `
 
-export default ContainerStyle
+export default Container

@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-let active = true
-// active = false
 const Overlay = props => (
     <OverlayStyled 
         id="overlay" 
-        // className={active && 'active'}
     ></OverlayStyled>
 )
 

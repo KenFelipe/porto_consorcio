@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled, { css } from 'styled-components'
 
 const WhatsAppLink = props => (
-    <Fragment>
+    <WhatsAppLinkWrapper>
         <StyledWhatsAppLink 
             href={props.href || 'https://google.com'}
             target="_blink"
@@ -17,22 +17,23 @@ const WhatsAppLink = props => (
             <p>Atendimento via</p>
             <p>WhatsApp</p>
         </WhatsAppContent>
-    </Fragment>
+    </WhatsAppLinkWrapper>
 )
 
-const WhatsAppLinkPosition = css`
+const WhatsAppLinkWrapper = styled.div`
     position: fixed;
     bottom: 20px;
     right: 20px;
 `
 
 const StyledWhatsAppLink = styled.a`
-    ${WhatsAppLinkPosition};
-
     display: block;
     cursor: pointer;
     width: 67px;
     height: 67px;
+
+    position: absolute;
+    right: 0;
 
     border: 1px solid rgba(255, 255, 255, .16);
     border-radius: 50%;
@@ -42,8 +43,6 @@ const StyledWhatsAppLink = styled.a`
 `
 
 const WhatsAppContent = styled.div`
-    ${WhatsAppLinkPosition};
-
     width: 182px;
     height: 67px;
     border-radius: 500px;
@@ -57,7 +56,7 @@ const WhatsAppContent = styled.div`
 
     transition: all .5s ease-in-out;
     opacity: 0;
-    z-index: -10;
+    pointer-events: none;
 
     p {
         &:first-child {

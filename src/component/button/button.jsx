@@ -11,10 +11,13 @@ const Button = props => (
 )
 
 const StyledButton = styled.button`
-    ${props => ButtonStyle[
-        ButtonStyle.hasOwnProperty(props.color) ? 
-            props.color : 'Green'
-    ]};
+    ${props => {
+        const color = props.color[0].toUpperCase() + props.color.slice(1)
+
+        return ButtonStyle[
+            ButtonStyle.hasOwnProperty(color) ? color : 'Green' 
+        ]
+    }}
 `
 
 export default Button

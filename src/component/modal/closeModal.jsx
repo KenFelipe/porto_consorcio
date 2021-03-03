@@ -11,7 +11,6 @@ const CloseModal = props => (
             overlay.classList.remove('active')
 
             const activeModal = document.querySelector('.modal.active')
-            console.log(activeModal)
             activeModal.classList.remove('active')
         }}
     >

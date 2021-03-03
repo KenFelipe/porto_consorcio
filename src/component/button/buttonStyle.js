@@ -32,7 +32,6 @@ export const Green = css`
 export const Blue = css`
     ${ButtonStyle};
     background-image: linear-gradient(270deg, #3DACFF 0, #2FC5FF 50%, #148DBB 60%, #148DBB 100%);
-    background-image: linear-gradient(270deg,rgba(255,255,255,0),rgba(255,255,255,0) 50%,rgba(190,199,190,.2) 60%,rgba(190,190,190,.2) 100%);
 `
 
 export const White = css`

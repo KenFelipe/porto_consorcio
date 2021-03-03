@@ -9,7 +9,6 @@ const overlayId = 'overlay'
 const PopupButton = props => (
     <Button
         color={props.color}
-        // modalId={props.modal}
         onClick={() => {
             const modal = document.getElementById(props.modal)
             modal.classList.add('active')
@@ -19,8 +18,5 @@ const PopupButton = props => (
         }}
     >{props.children}</Button>
 )
-
-// const StyledPopupButton = styled.div`
-// `
 
 export default PopupButton
