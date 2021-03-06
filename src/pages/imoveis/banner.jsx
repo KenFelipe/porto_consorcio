@@ -3,7 +3,6 @@ import React from 'react'
 import BannerWrapper from '../../component/banner/banner'
 import BannerHeader from '../../component/banner/header'
 import BannerText from '../../component/banner/text'
-// import { BannerWrapper, BannerHeader, BannerText } from '../../component/banner'
 
 import Button from '../../component/button/button'
 

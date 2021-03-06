@@ -12,8 +12,8 @@ const Button = props => (
 
 const StyledButton = styled.button`
     ${props => {
-        const color = props.color[0].toUpperCase() + props.color.slice(1)
-
+        const color = props.color && props.color[0].toUpperCase() + props.color.slice(1)
+        
         return ButtonStyle[
             ButtonStyle.hasOwnProperty(color) ? color : 'Green' 
         ]
