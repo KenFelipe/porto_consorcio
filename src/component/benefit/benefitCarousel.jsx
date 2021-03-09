@@ -2,16 +2,18 @@ import React from 'react'
 
 import Carousel from '../carousel/carousel'
 
-const PricesCarousel = props => (
+const BenefitCarousel = props => (
     <Carousel 
         carouselId={props.carouselId}
-        height="315px"
+        className={props.className}
+        height="130px"
         setting={{
-            loop: true,
+            loop: false,
             centeredSlides: true,
             autoplay: {
                 delay: 1300,
             },
+            spaceBetween: 0,
             // breakpoints: {
             //     480: {
             //         slidesPerView: 'auto',
@@ -22,4 +24,4 @@ const PricesCarousel = props => (
     >{props.children}</Carousel>
 )
 
-export default PricesCarousel
+export default BenefitCarousel

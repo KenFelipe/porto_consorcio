@@ -6,22 +6,25 @@ import swiperDefaultConfig from './swiperDefaultConfig'
 
 const Carousel = props => {
     useEffect(() => {
-        const sliders = document.getElementById(props.id)
+        const sliders = document.querySelector(`#${props.carouselId} > .swiper-wrapper`)
         for(let i = 0; i < sliders.childElementCount; i++) {
             sliders.childNodes.item(i).className += ' swiper-slide'
         }
 
         const swiperConfig = { ...swiperDefaultConfig, ...props.setting }
-        const swiper = new Swiper('.swiper-container', swiperConfig); 
+        const swiper = new Swiper(`#${props.carouselId}.swiper-container`, swiperConfig); 
     }, [])
 
     return (
-        <CarouselWrapper height={props.height}>
+        <CarouselWrapper 
+            height={props.height}
+            className={props.className}
+        >
             {/* Slider main container */}
-            <div className="swiper-container">
+            <div className="swiper-container" id={props.carouselId}>
 
                 {/* Additional required wrapper */}
-                <div className="swiper-wrapper" id={props.id}>
+                <div className="swiper-wrapper">
                     {/* Slides */}
                     {props.children}
                 </div>
@@ -43,7 +46,6 @@ const Carousel = props => {
 const CarouselWrapper = styled.div`
     ${Container};
     height: ${props => props.height || '300px'};
-    margin-top: 40px;
 
     .swiper-container {
         height: 100%;

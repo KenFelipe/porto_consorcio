@@ -5,6 +5,7 @@ import Banner from './banner'
 import Catching from '../../component/catching/catching'
 import Titling from './titling'
 import Prices from './prices'
+import Benefit from './benefit'
 
 import BreadCrumbs from '../../component/breadcrumbs/breadcrumbs'
 import WhatsApp from '../../component/whatsapp/whatsapp'
@@ -22,6 +23,7 @@ const Imoveis = props => (
         <Catching />
         <Titling />
         <Prices />
+        <Benefit />
 
         <Debug><PopupButton modal="lorem" color="white">Lorem Ipsum</PopupButton></Debug>
         <Modal id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et beatae voluptates culpa aliquid perspiciatis vero dignissimos adipisci quis labore officiis magni, animi voluptatibus quisquam molestiae mollitia cupiditate. Nisi, harum. Voluptatem?</Modal>

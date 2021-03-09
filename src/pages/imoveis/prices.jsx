@@ -8,7 +8,7 @@ import CardText from '../../component/card/text'
 
 const Prices = props => (
     <PricesCarousel 
-        id="imoveis-prices"
+        carouselId="imoveis-prices"
         setting={{
             autoplay: false,
         }}

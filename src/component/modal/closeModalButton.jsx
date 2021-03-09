@@ -1,18 +1,12 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
-const overlayId = 'overlay'
+import { closeModal } from './closeModal.js'
 
 const CloseModal = props => (
     <Close 
         color={props.color}
-        onClick={() => {
-            const overlay = document.getElementById(overlayId)
-            overlay.classList.remove('active')
-
-            const activeModal = document.querySelector('.modal.active')
-            activeModal.classList.remove('active')
-        }}
+        onClick={() => closeModal()}
     >
         { props.closeIcon || <Fragment>&times;</Fragment> }
     </Close>

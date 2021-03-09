@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CloseModal from './closeModal'
+import CloseModal from './closeModalButton'
 
 const Modal = props => (
     <StyledModal

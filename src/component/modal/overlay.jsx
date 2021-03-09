@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { closeModal } from './closeModal.js'
+
 const Overlay = props => (
     <OverlayStyled 
-        id="overlay" 
+        id='overlay' 
+        onClick={closeModal}
     ></OverlayStyled>
 )
 
