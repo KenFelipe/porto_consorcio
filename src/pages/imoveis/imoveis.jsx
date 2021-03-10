@@ -22,8 +22,8 @@ const Imoveis = props => (
         <Banner />
         <Catching />
         <Titling />
-        <Prices />
         <Benefit />
+        <Prices />
 
         <Debug><PopupButton modal="lorem" color="white">Lorem Ipsum</PopupButton></Debug>
         <Modal id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et beatae voluptates culpa aliquid perspiciatis vero dignissimos adipisci quis labore officiis magni, animi voluptatibus quisquam molestiae mollitia cupiditate. Nisi, harum. Voluptatem?</Modal>

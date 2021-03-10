@@ -10,11 +10,12 @@ const Titling = props => (
 const TitlingWrapper = styled.div`
     ${Container};
     
-    color: rgba(28, 28, 28, .6);
+    margin: 0 175px 30px;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 15px;
-    padding: 15px 0;
-`
+
+    color: rgba(28, 28, 28, .6);
+    font-size: 34px;
+    letter-spacing: .5px;
+    line-height: 44px;`
 
 export default Titling

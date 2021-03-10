@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import PopupButton from '../../component/modal/popupButton'
 
-// const overlayId = 'overlay'
-
 const BenefitCard = props => (
     <StyledBenefitCard islink={props.islink}>
         <PopupButton modal={props.modal}></PopupButton>
@@ -19,7 +17,6 @@ const StyledBenefitCard = styled.div`
     padding: 15px 15px 15px 60px;
     border: 1px solid #d2d2d2;
     border-left: none;
-    /* border-top: 1px solid #d2d2d2; */
     background-color: #fff;
     position: relative;
     transition: all .7s ease;

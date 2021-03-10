@@ -8,8 +8,9 @@ const BenefitCarousel = props => (
         className={props.className}
         height="130px"
         setting={{
+            // loop: true,
             loop: false,
-            centeredSlides: true,
+            // centeredSlides: true,
             autoplay: {
                 delay: 1300,
             },
