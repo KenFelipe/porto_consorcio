@@ -28,10 +28,12 @@ const regItems = times => {
         <VideoItem
             key={`video-${i}`}
             // width={`${286+(15*i)}px`}
+            // width="500px"
             width="286px"
-            modal="lorem"
+            modal="benefittest"
+            // modal="lorem"
             img="https://www.portoseguro.com.br/NovoInstitucional/static_files/images/videos/porto-seguro-consorcio-investimento-286x230.jpg"
-        ></VideoItem>
+        >Lorem Ipsum</VideoItem>
     ))
     return videos
 }

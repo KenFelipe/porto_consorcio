@@ -1,50 +1,54 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import PopupButton from '../../component/modal/popupButton'
 
 const BenefitCard = props => (
-    <StyledBenefitCard islink={props.islink}>
-        {props.islink && 
-            <PopupButton 
-                type="fill"
-                modal={props.modal} 
-            ></PopupButton>
-        }
-        <p>{props.children || testtext}</p>
-        <a href="">SAIBA MAIS &gt;</a>
-    </StyledBenefitCard>
+    <Wrapper>
+        <StyledBenefitCard islink={props.islink}>
+            {props.islink && 
+                <PopupButton 
+                    type="fill"
+                    modal={props.modal} 
+                ></PopupButton>
+            }
+            <p>{props.children}</p>
+            <a href="">SAIBA MAIS &gt;</a>
+        </StyledBenefitCard>
+    </Wrapper>
 )
 
-const StyledBenefitCard = styled.div`
+const Wrapper = styled.div`
     width: 300px;
     height: 130px;
-    padding: 15px 15px 15px 60px;
     border: 1px solid #d2d2d2;
     border-left: none;
-    background-color: #fff;
+    color: rgba(28, 28, 28, .6);
+
     position: relative;
-    transition: all .7s ease;
+    background-color: #fff;
 
     &:first-child {
+        width: 301px;
         border-left: 1px solid #d2d2d2;
     }
 
     &:hover {
+        transition: all .7s ease;
         background-color: #555861;
-
-        p {
-            color: #fff;
-        }
+        color: #fff;
     }
+`
+const StyledBenefitCard = styled.div`
+    padding: 15px 15px 15px 60px;
 
     p {
-        color: rgba(28, 28, 28, .6);
+        color: inherit;
         letter-spacing: 0;
         line-height: 24px;
         word-break: break-word;
         font-size: 1.4rem;
         pointer-events: none;
-        transition: all .7s ease;
     }
 
     a {
@@ -59,14 +63,6 @@ const StyledBenefitCard = styled.div`
         position: absolute;
         bottom: 15px;
     }
-
-    /* &::before {
-        content: '';
-        width: 60px;
-        position: absolute;
-        left: 0; top: 0;
-        background-color: #987232;
-    } */
 `
 
 export default BenefitCard

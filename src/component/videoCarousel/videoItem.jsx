@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import PopupButton from '../modal/popupButton'
 
-const text = 'lorem ipsum'
 const VideoItem = props => (
     <Wrapper width={props.width}>
         <PopupButton 
@@ -11,14 +10,13 @@ const VideoItem = props => (
             modal={props.modal}
         ></PopupButton>
         <img src={props.img} alt={props.alt}/>
-        <h4>{props.children || text}</h4>
+        <h4>{props.children}</h4>
     </Wrapper>
 )
 
 const Wrapper = styled.div`
     width: ${props => props.width || '300px'};
     height: 230px;
-    cursor: pointer;
     border-radius: 8px;
     position: relative;
     overflow: hidden;

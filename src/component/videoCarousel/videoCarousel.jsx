@@ -1,15 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Carousel from '../carousel/carousel'
-import Container from '../container/container'
 
 const VideoCarousel = props => (
     <Carousel 
         carouselId={props.carouselId}
         height="230px"
         setting={{
-            // loop: true,
+            loop: true,
             centeredSlides: true,
             autoplay: {
                 delay: 1300,

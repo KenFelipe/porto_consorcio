@@ -18,7 +18,6 @@ const Benefit = props => (
             }}
         >
             {/* <BenefitCard modal="benefittest" islink>Opções de planos com parcelas reduzidas até a contemplação.</BenefitCard> */}
-
             {regCards(5)}
         </BenefitCarousel>
 
@@ -44,7 +43,7 @@ const ModalA = styled(Modal)`
 const regCards = times => {
     const benefitCard = Array(times).fill(0).map((_, i) => (
         <BenefitCard 
-            key={`benefit${i}`}
+            key={`benefit-${i}`}
             modal="benefittest" 
             islink
         >
