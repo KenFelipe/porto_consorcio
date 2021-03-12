@@ -15,6 +15,9 @@ import Overlay from '../../component/modal/overlay'
 // debug
 import PopupButton from '../../component/modal/popupButton'
 
+import Videos from './videos'
+
+
 const Imoveis = props => (
     <ImoveisWrapper>
         <Title>Imoveis</Title>
@@ -28,6 +31,8 @@ const Imoveis = props => (
         <Debug><PopupButton modal="lorem" color="white">Lorem Ipsum</PopupButton></Debug>
         <Modal id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et beatae voluptates culpa aliquid perspiciatis vero dignissimos adipisci quis labore officiis magni, animi voluptatibus quisquam molestiae mollitia cupiditate. Nisi, harum. Voluptatem?</Modal>
         <Overlay />
+
+        <Videos />
 
         <BreadCrumbs links={[
             { to: '/', label: 'Home' },

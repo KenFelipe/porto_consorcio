@@ -4,8 +4,12 @@ import PopupButton from '../../component/modal/popupButton'
 
 const BenefitCard = props => (
     <StyledBenefitCard islink={props.islink}>
-        <PopupButton modal={props.modal}></PopupButton>
-
+        {props.islink && 
+            <PopupButton 
+                type="fill"
+                modal={props.modal} 
+            ></PopupButton>
+        }
         <p>{props.children || testtext}</p>
         <a href="">SAIBA MAIS &gt;</a>
     </StyledBenefitCard>
@@ -54,18 +58,6 @@ const StyledBenefitCard = styled.div`
         letter-spacing: 1.5px;
         position: absolute;
         bottom: 15px;
-    }
-
-    button {
-        display: block;
-        border: none;
-        padding: 0;
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        ${props => !props.islink ? 'z-index: -100' : ''};
     }
 
     /* &::before {

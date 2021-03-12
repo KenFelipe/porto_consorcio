@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Button from '../button/button'
-import ButtonStyle from '../button/buttonStyle'
 
 const overlayId = 'overlay'
 
 const PopupButton = props => (
     <Button
-    className={props.className}
+        className={props.className}
         color={props.color}
+        type={props.type}
         onClick={() => {
             const modal = document.getElementById(props.modal)
             if(!modal) {
