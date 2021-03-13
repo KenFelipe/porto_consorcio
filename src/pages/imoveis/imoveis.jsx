@@ -25,6 +25,7 @@ const Imoveis = props => (
         <Banner />
         <Catching />
         <Titling />
+        <Benefit />
         <Prices />
 
         <Debug><PopupButton modal="lorem" color="white">Lorem Ipsum</PopupButton></Debug>
@@ -32,7 +33,6 @@ const Imoveis = props => (
         <Overlay />
 
         <Videos />
-        <Benefit />
 
         <BreadCrumbs links={[
             { to: '/', label: 'Home' },

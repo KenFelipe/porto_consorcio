@@ -7,7 +7,7 @@ const BenefitCarousel = props => (
         carouselId={props.carouselId}
         height="130px"
         setting={{
-            // loop: true,
+            loop: true,
             centeredSlides: true,
             autoplay: {
                 delay: 1300,

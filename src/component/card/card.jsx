@@ -9,12 +9,12 @@ const Card = props => (
 )
 
 const StyledCard = styled.div`
-    width: 293px;
-    /* width: 280px; */
+    width: 288px;
     height: 315px;
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     overflow: hidden;
+    box-sizing: content-box;
 `
 
 const CardImage = styled.img`
@@ -24,6 +24,7 @@ const CardImage = styled.img`
 `
 
 const CardContent = styled.div`
+    width: 100%;
     height: 185px;
     padding: 15px 30px;
     text-align: center;

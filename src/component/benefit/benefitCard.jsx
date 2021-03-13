@@ -19,18 +19,20 @@ const BenefitCard = props => (
 )
 
 const Wrapper = styled.div`
-    width: 300px;
+    width: 299px;
     height: 130px;
     border: 1px solid #d2d2d2;
     border-left: none;
     color: rgba(28, 28, 28, .6);
+    box-sizing: content-box;
 
     position: relative;
     background-color: #fff;
 
     &:first-child {
-        width: 301px;
-        border-left: 1px solid #d2d2d2;
+        // comment on loop: true;
+        /* width: 298px;
+        border-left: 1px solid #d2d2d2; */
     }
 
     &:hover {

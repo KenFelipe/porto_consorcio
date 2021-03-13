@@ -1,5 +1,6 @@
 const swiperDefaultConfig = {
     direction: 'horizontal',
+    // loop: true,
     loop: false,
     centeredSlides: false,
     grabCursor: true,
@@ -12,8 +13,8 @@ const swiperDefaultConfig = {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        // delay: 2000,
-        // disableOnInteraction: false,
+        delay: 1300,
+        disableOnInteraction: false,
     },
     slidesPerView: 'auto',
     spaceBetween: 10,

@@ -14,7 +14,7 @@ const Benefit = props => (
         <BenefitCarousel
             carouselId="benefit-carousel"
             setting={{
-                autoplay: false,
+                // autoplay: false,
             }}
         >
             {/* <BenefitCard modal="benefittest" islink>Opções de planos com parcelas reduzidas até a contemplação.</BenefitCard> */}

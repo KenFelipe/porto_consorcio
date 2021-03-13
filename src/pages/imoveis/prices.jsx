@@ -18,10 +18,10 @@ const Prices = props => (
         <PricesCarousel 
             carouselId="imoveis-prices"
             setting={{
-                autoplay: false,
+                // autoplay: false,
             }}
         >
-            {regCards(4)}
+            {regCards(5)}
         </PricesCarousel>
     </Wrapper>
 )
