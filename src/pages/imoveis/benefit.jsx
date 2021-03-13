@@ -25,7 +25,7 @@ const Benefit = props => (
         position: fixed nao functiona de forma correto se 
         tiver css 'transform: ... ' no elemento parente */}
         <ModalWrapper>
-            <ModalA id="benefittest">BENEFIT</ModalA>
+            <ModalA id="benefittest">Test</ModalA>
         </ModalWrapper>
     </Wrapper>
 )

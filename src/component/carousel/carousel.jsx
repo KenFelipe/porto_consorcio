@@ -53,8 +53,6 @@ const CarouselWrapper = styled.div`
 
     .swiper-slide {
         height: 100%;
-        /* max-width: 293px; */
-        background-color: #fff;
     }
 `
 

@@ -4,23 +4,25 @@ import styled from 'styled-components'
 import Banner from './banner'
 import Catching from '../../component/catching/catching'
 import Titling from './titling'
-import Prices from './prices'
 import Benefit from './benefit'
+import Prices from './prices'
+import Videos from './videos'
 
 import BreadCrumbs from '../../component/breadcrumbs/breadcrumbs'
 import WhatsApp from '../../component/whatsapp/whatsapp'
 import Modal from '../../component/modal/modal'
 import Overlay from '../../component/modal/overlay'
 
-// debug
 import PopupButton from '../../component/modal/popupButton'
 
-import Videos from './videos'
-
+// debug
+import RangeBar from '../../component/range/rangeBar/rangeBar'
 
 const Imoveis = props => (
     <ImoveisWrapper>
         <Title>Imoveis</Title>
+
+        <RangeBar />
 
         <Banner />
         <Catching />

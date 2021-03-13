@@ -13,6 +13,7 @@ const StyledCard = styled.div`
     height: 315px;
     border: 1px solid #e6e6e6;
     border-radius: 8px;
+    background-color: #fff;
     overflow: hidden;
     box-sizing: content-box;
 `
