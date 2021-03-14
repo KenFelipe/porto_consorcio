@@ -19,6 +19,7 @@ const hiddenBothEndsStyle = css`
 `
 
 export const RangeBarContainer = styled.div`
+    margin-top: 16px !important;
     text-align: center;
     position: relative;
 
@@ -28,7 +29,6 @@ export const RangeBarContainer = styled.div`
     @media (max-width: 490px) {
         margin: 0 -8px;
     }
-
 
     /*  */
     &::before {

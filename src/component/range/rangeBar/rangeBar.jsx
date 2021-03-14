@@ -9,8 +9,15 @@ import { RangeBarProgressBar } from './rbProgressBar.style'
 
 import RangeBarRangeDisplay from './rbRangeDisplay'
 
+
+import CurrentValueDisp from '../display/dispCurrentValue' // for debug
+import ResultValueDisp from '../display/dispResultValue' // for debug
+
+
 export default props => (
     <Range>
+        <CurrentValueDisp isParcela={true} />
+
         <RangeBarContainer>
             <RangeBar 
                 id="rangebar" 
@@ -27,11 +34,12 @@ export default props => (
             min={500}
             max={1000000}
         ></RangeBarRangeDisplay>
+
+        <ResultValueDisp />
     </Range>
 )
 
 const Range = styled.div`
-    margin: 100px 0;
+    margin: 60px 0;
     ${Container};
-
 `
